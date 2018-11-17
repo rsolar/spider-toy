@@ -3,12 +3,14 @@
 
 import argparse
 import os
+import sys
 import traceback
 
 import bs4
 import requests
 import requests.adapters
 
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from utils.rotate_logger import init_logger
 from utils.send_qq_mail import send_qq_mail
 
